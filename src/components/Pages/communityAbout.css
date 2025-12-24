@@ -1,0 +1,169 @@
+.community-about-container {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+/* 🔙 Back button wrapper (outside card, aligned with card) */
+.top-nav,
+.page-action {
+  max-width: 1100px;
+  margin: 0px auto 8px;
+  padding: 0 16px;
+}
+
+/* 🔙 Back to Home */
+.back-home-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #1976d2;
+  cursor: pointer;
+  padding: 20;
+  margin:5px
+}
+
+.back-home-btn:hover {
+  text-decoration: underline;
+}
+
+/* 📄 Card */
+.community-about-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* 🖼 Banner inside card */
+.community-banner,
+.community-card-banner {
+  width: 100%;
+  height: 3%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* ✨ Header text */
+.community-header {
+  margin-bottom: 24px;
+}
+
+.community-title {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.community-description {
+  color: #555;
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+
+/* 🧩 Grid layout for details */
+.community-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+/* 🧱 Info cards */
+.community-info-grid div {
+  background: #f8f9fb;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* 🏷 Label (real-world UI touch) */
+.info-label {
+  font-size: 12px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ⭐ Features section */
+.community-features {
+  margin-top: 22px;
+  padding-top: 14px;
+  border-top: 1px solid #eee;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ⏳ Loading / empty state */
+.page-status {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+}
+
+/* 📱 Mobile & Tablet responsiveness */
+@media (max-width: 768px) {
+  .community-about-container {
+    padding: 0 12px;
+  }
+
+  .page-action {
+    margin: 12px auto;
+  }
+
+  .back-home-btn {
+    padding-left: 0;
+    font-size: 13px;
+  }
+
+  .community-about-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .community-banner {
+    height: 180px;
+    border-radius: 10px;
+  }
+
+  .community-title {
+    font-size: 22px;
+  }
+
+  .community-description {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .community-info-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .community-features h3 {
+    font-size: 16px;
+  }
+
+  .community-features p {
+    font-size: 14px;
+  }
+}
+
+/* 📱 Small mobile (very small screens) */
+@media (max-width: 480px) {
+  .community-banner {
+    height: 150px;
+  }
+
+  .community-title {
+    font-size: 20px;
+  }
+
+  .info-label {
+    font-size: 11px;
+  }
+}
